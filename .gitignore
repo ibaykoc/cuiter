@@ -46,6 +46,7 @@ bower_components
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 client/dist
+client/build
 
 # Dependency directories
 client/node_modules/
