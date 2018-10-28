@@ -1,5 +1,10 @@
 #----------------GO-----------------
 # Binaries for programs and plugins
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
 *.exe
 *.exe~
 *.dll
@@ -13,5 +18,6 @@
 *.out
 
 #------------npm--------------
-client/**
-!client/dist
+/client
+client
+!/client/dist
