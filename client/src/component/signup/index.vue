@@ -1,6 +1,9 @@
 <template lang="pug">
   div.uk-width-1-2
-      p.uk-text-bold(style="color:black;") Bergabunglah dengan Cuiter sekarang juga.
+      form
+        legend.uk-legend Daftar
+        input.uk-input(type="text" placeholder="Username")
+        input.uk-input(type="password" placeholder="Password")
 </template>
 
 <script>
