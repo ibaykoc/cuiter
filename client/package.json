@@ -4,8 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build:dev": "webpack --inline --progress --config webpack.config.js --watch --mode development",
-    "build:prod": "webpack --inline --progress --config webpack.config.js --mode production"
+    "build:dev": "webpack --inline --progress --config webpack.config.js --watch --mode development --env=development",
+    "build:prod": "webpack --inline --progress --config webpack.config.js --mode production --env=production"
   },
   "author": "",
   "license": "ISC",
