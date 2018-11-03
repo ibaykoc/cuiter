@@ -14,6 +14,13 @@ module.exports = env => {
       path: path.resolve(__dirname, env === 'production' ? 'build' : 'dist'),
       filename: 'bundle.js'
     },
+    resolve: {
+      extensions: ['.js', '.vue', '.json'],
+      alias: {
+        'vue$': 'vue/dist/vue.esm.js',
+        '@': path.resolve('src')
+      }
+    },
     module: {
       rules: [
         {
@@ -40,7 +47,14 @@ module.exports = env => {
           options: {
             failOnWarning: true
           }
+        }, {
+          test: /\.js$/,
+          loader: 'babel-loader',
+          query: {
+            presets: ['env']
+          }
         }
+
       ]
     },
     plugins: [

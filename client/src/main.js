@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
 import UIKit from 'uikit'
 import Icons from 'uikit/dist/js/uikit-icons'
 import 'uikit/dist/css/uikit.min.css'
@@ -11,5 +12,7 @@ UIKit.use(Icons)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  render: createElement => createElement(App)
+  router,
+  components: { App },
+  template: '<app/>'
 })
